@@ -1,0 +1,9 @@
+#from math import trunc
+#import math
+num = float(input('Digite um número:   '))
+#print(f'O número digitado foi {num} e sua porção inteira é {math.trunc(num)}') 
+#print(f' O numero digitado foi  {num} e sua portção é inteira é {trunc(num)}')
+
+#VER A PORÇÃO INTEIRA SEM IMPORTAR NADA
+
+print(f'O número digitado foi {num} e sua porção inteira é {int(num)}')
