@@ -1,4 +1,7 @@
-nome = input('Digite o nome que tenha a letra A: ')
-while 'A' not in nome.upper():
-    nome = input('Dados inválidos! Digite novamente: ')
-print(f'O nome {nome} foi registrado com sucesso!')
+a = 1
+b = 1
+for i in range(1, 6):
+    print(a)
+    proximo = a + b
+    a = b
+    b = proximo
