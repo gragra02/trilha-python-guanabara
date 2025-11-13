@@ -1,34 +1,66 @@
-# ...existing code...
-print("CADASTRE UMA PESSOA")
-print("-=" * 30)
-maior = 0
-menor = 0
-masc = 0
-femi = 0
-while True:
-    idade = int(input("Idade: "))
-    sexo = input("Sexo [M/F]: ").upper().strip()
-    while sexo == "" or sexo[0] not in ("M", "F"):
-        sexo = input("Digite apenas M ou F. Sexo [M/F]: ").upper().strip()
-    sexo = sexo[0]
+#lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim', 'Batata Frita')
 
-    if idade >= 18:
-        maior += 1
-    else:
-        menor += 1 
+#print(lanche[:4])
 
-    if sexo == "M":
-        masc += 1
-    else:
-        femi += 1
+# for cont in range(0, len(lanche)):
+#     print(f"Eu vou comer {lanche[cont]} na posição {cont}")
 
-    opção = input("Quer continuar? [S/N]: ").upper().strip()
-    while opção == "" or opção[0] not in ("S", "N"):
-        opção = input("Digite apenas S ou N. Quer continuar? [S/N]: ").upper().strip()
-    if opção[0] == "N":
-        break
+# for comida in lanche:
+#     print(f"Eu vou comer {comida}")
 
-print(f"Total de pessoas com mais de 18 anos: {maior}")
-print(f"O total de homens: {masc}")
-print(f"O total de mulheres: {femi}")
-# ...existing code...
+#for pos, comida in enumerate(lanche):
+    # print(sorted(lanche))  # Ordena a tupla em ordem alfabética sem alterar a tupla original
+
+# a = (2, 5, 4)
+# b = (5, 8, 1, 2)
+# c = b + a
+# print(c)
+# print(sorted(c))  # Ordena a tupla resultante em ordem crescente
+# print(c.count(5))  # Conta quantas vezes o valor 5 aparece na tupla c
+#print(lanche.index('Pizza', 1))  # Retorna a posição do valor 'Pizza' na tupla
+
+
+#Listas#
+
+# num = [2, 5, 9, 1] #Lista
+# print(num) 
+# num[2] = 3 #Alterando o valor da posição 
+# print(num)
+# num.append(7) #Adicionando um valor no final da lista
+# print(num)
+# num.sort(reverse=True) #Organizando a lista em ordem decrescente
+# print(num)
+# num.insert(2, 2) #Inserindo o valor 0 na posição 2
+# print(num)
+# num.remove(2) #Removendo o valor 2 da lista
+# if 4 in num:
+#     num.remove(4)
+# else:
+#     print("O valor 4 não foi encontrado na lista.")
+# print(num)
+# num.pop() #Removendo o último elemento da lista
+# print(num)
+# print(f"Essa lista tem {len(num)} elementos. " ) #Mostrando a quantidade de elementos da lista
+
+valores = []
+# valores.append(5)
+# valores.append(9)
+# valores.append(4)
+# print(valores)
+for cont in range(0, 5):
+    valores.append(int(input("Digite um valor: ")))
+# for v in valores:
+#     print(f'{v}...', end=' ') # formata os números bonitinhos
+# print('Fim')
+for c, v in enumerate(valores):
+    print(f'Na posição {c} está o valor {v}')
+print('Cheguei ao final da lista.')
+
+a = [1, 2, 3,  5,]
+b = a
+print(f'b = {b}')
+print(f'a = {a}')
+b = a[:]
+b.append(4)
+print(f'b = {b}')
+print(f'a = {a}')
