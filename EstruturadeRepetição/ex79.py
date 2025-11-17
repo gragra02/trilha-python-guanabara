@@ -4,11 +4,13 @@
 valores = []
 while True:
     v = int(input('Digite um valor: '))
-    valores.append(v)
-    print('Valor adicionado com sucesso...')
-    r = ''
-    while r not in 'SN':
-        r = input('Quer continuar? [S/N] ').upper().strip()[0]
+    if v not in valores:
+        valores.append(v)
+        print('Valor adicionado com sucesso...')
+    else:
+        print('Valor duplicado! Não vou adicionar...')
+    r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if r == 'N':
         break
-print (sorted(valores))
+print(f'Você digitou os números {sorted(valores)}')
+
