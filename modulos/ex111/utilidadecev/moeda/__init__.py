@@ -3,11 +3,24 @@
 
 def aumentar(preço=0, taxa=0):
     return preço + (preço * taxa / 100)
-'''
-->Calcula o aumento de um preço, retornando o resultado com ou sem formatação.
-    
 
-'''
+"""
+-Módulo de operações monetárias.
+
+Este módulo oferece funções para manipulação de preços, incluindo aumento, 
+redução, cálculo de dobro e metade, além de formatação em estilo monetário. 
+Também contém uma função de resumo que exibe todas essas operações em formato
+organizado.
+
+Funções principais:
+- aumentar(): Calcula aumento percentual.
+- diminuir(): Calcula redução percentual.
+- dobro(): Retorna o dobro de um valor.
+- metade(): Retorna a metade de um valor.
+- moeda(): Formata o valor como monetário.
+- resumo(): Exibe um painel com todas as operações acima.
+"""
+
 
 
 def dobro(preço=0):
