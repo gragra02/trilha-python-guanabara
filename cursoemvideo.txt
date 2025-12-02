@@ -1,0 +1,7 @@
+Graziele;45
+Ariel;45
+Cristan;45
+Lara;25;0
+Fatima;65
+;3
+desconhecido;3
